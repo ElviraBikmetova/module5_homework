@@ -1,14 +1,19 @@
+// Задание 2. Дана переменная x, которая может принимать любое значение. Написать программу, которая в зависимости от типа данных x выводит в консоль сообщение вида: «x — число». Опишите три случая: когда х = числу, строке или логическому типу. В других случаях выводите сообщение: «Тип x не определён».
+
 let x;
 // x = 5;
 // x = 'gsdf';
 // x = true;
-if (typeof x === "number") {
-    console.log('x - число')
-} else if (typeof x === "string") {
-    console.log('x - строка')
-} else if (typeof x === "boolean") {
-    console.log('x - логический тип')
-} else {
-    console.log('Тип x не определён')
-}
+// x = NaN;
 
+if (typeof x === "number") {
+  if (isNaN(x)) {
+    console.log("Тип x не определён");
+  } else console.log("x - число");
+} else if (typeof x === "string") {
+  console.log("x - строка");
+} else if (typeof x === "boolean") {
+  console.log("x - логический тип");
+} else {
+  console.log("Тип x не определён");
+}
