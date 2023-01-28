@@ -20,4 +20,4 @@ for (let i = 0; i < someArr.length; i++) {
     }
   }
 }
-console.log(even, odd, zero);
+console.log(`Количество четных - ${even}, нечетных - ${odd}, нулей - ${zero}`);
